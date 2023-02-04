@@ -1,0 +1,41 @@
+@media (max-width:1605px) and (min-width:769px) {
+    #shift
+    {
+        margin-left: 150px;
+    }
+    
+    #profilePicture
+    {
+        width: 100px;
+        border-radius: 50%;
+        position: fixed;
+        top: 10px;
+        left: 20px;
+    }
+    
+    #sidebar
+    {
+        background-color: #202225;
+        height: 100%;
+        width: 150px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 140px;
+    }
+
+    #sidebar a 
+    {
+        text-align: center;
+        padding: 5px 8px 5px 5px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+    }
+    
+    #mobileMenu, .mobileTable
+    {
+        display: none;
+    }
+}
