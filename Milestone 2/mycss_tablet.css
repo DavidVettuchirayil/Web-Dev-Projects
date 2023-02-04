@@ -1,0 +1,50 @@
+@media (max-width:768px) {
+    #shift
+    {
+        margin-left: 0px;
+    }
+
+    #sidebar, #sidebar a {
+        display: none;
+    }
+
+    #profilePicture
+    {
+        width: 130px;
+        border-radius: 50%;
+    }
+
+    .horizontalTest
+    {
+        display: flex;
+        justify-content:space-evenly;
+    }
+
+    iframe
+    {
+        display: block;
+        margin: auto;
+        width: auto; height: auto;
+        outline: auto;
+        outline-style: dashed;
+        outline-color:  white;
+    }
+
+    .favoriteWebsiteParagraph
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #funnyMonkey img
+    {
+        width: 75%;
+    }
+    
+    #radioButton label
+    {
+        display: table-cell;
+        margin-top: -1px;
+        vertical-align: middle;
+    }
+}
