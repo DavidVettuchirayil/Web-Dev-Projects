@@ -1,0 +1,66 @@
+body
+{
+    background-color:#36393f;
+    color: #d2d3d4;
+}
+
+h1
+{
+    color: black;
+    -webkit-text-fill-color: white;
+    background-color: lightgray;
+    display: table;
+}
+
+h2 
+{
+    color: white;
+}
+
+a:link
+{
+    color: #00aff4;
+}
+
+a:visited
+{
+   color: #7727d9;
+}
+
+td, th
+{
+    border:2px solid #2f3136;
+    text-align: center;
+}
+
+li
+{
+    font-size: large;
+}
+
+ul
+{
+    list-style-type: square;
+}
+
+.tableSetting 
+{
+    width: 50%;
+    border:5px solid #2f3136;
+    text-align: center;
+    color: white;
+}
+
+p
+{
+    font-size: large;
+}
+
+#funnyMonkey
+{
+    border: 2px solid;
+    background-color: #0a5e0c;
+    color: black;
+    text-align: center;
+}
+
