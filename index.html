@@ -1,211 +1,56 @@
 <!DOCTYPE html>
-<html>
-    <style>
-        iframe
-        {
-            width: 592px; height: 333px;
-            outline: auto;
-            outline-style: dashed;
-            outline-color:  white;
-        }
-        
-    </style>
-    
-    <head>
-        <title> David Vettuchirayil's Profile Page </title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="Milestone 3/assets/css/mycss_tablet.css">
-        <link rel="stylesheet" type="text/css" href="Milestone 3/assets/css/mycss_web.css">
-        <link rel="stylesheet" type="text/css" href="Milestone 3/assets/css/style1.css">
-    </head>
-
+<head>
+    <title>To-Do List</title>
+    <script src="Project.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <body>
-        <div class="container-fluid">
-            <div class="row">
+        <div class="container-fluid d-flex flex-column h-100">
 
-                <div class="col-2" style="background-color: #202225;">
-                    <div class="sticky-top">
-                        <div>
-                            <img class="img-fluid" id="profilePicture" src="https://github.com/DavidVettuchirayil/Project-1-Milestone-1/blob/main/Milestone%202/assets/img/Screenshot%202023-01-26%20235624.png?raw=true">
-                        </div>
-                        <div id="sidebar" >
-                            <a href="#About Me"> About Me </a>
-                            <a href="#Education"> Education </a>
-                            <a href="#Work Experience"> Work Experience </a>
-                            <a href="#Interests and Hobbies"> Interests and Hobbies </a>
-                            <a href="#Programming Skills"> Programming Skills </a>
-                            <a href="#Favorites"> Favorites </a>
-                            <a href="#Favorite Website"> Favorite Website </a>
-                            <a href="#Project Index"> Project Index </a>
-                        </div> 
-                    </div>
-                </div>
-
-
-                <div class="col-lg">
-                    <div>
-                        <h1 class="page-header">
-                            My Profile Page
-                        </h1>
-                    </div>
-        
-                <div id="mobileMenu" style="overflow-x: auto;">
-                    <h2> Navigation </h2>
-                        <table id="tableSetting" class="table table-info table-responsive">
-                            <tr>
-                                <th> <a href="#About Me"> About Me </a> </th>
-                                <th> <a href="#Education"> Education </a>  </th>
-                                <th> <a href="#Work Experience"> Work Experience </a> </th>
-                                <th> <a href="#Interests and Hobbies"> Interests and Hobbies </a> </th>
-                                <th> <a href="#Programming Skills"> Programming Skills </a> </th>
-                                <th> <a href="#Favorites"> Favorites </a> </th>
-                                <th> <a href="#Favorite Website"> Favorite Website </a> </th>
-                                <th> <a href="#Project Index"> Project Index </a> </th>
-                            </tr>
-                        </table>
-                    </h2>
-                </div>
-        
-                <hr>
-                
-                <div class="row" style="padding-left: 15px; padding-right: 15px;">
-                    <h2 id="About Me"> About Me </h2>
-                    <div class="horizontalTest mobileTable"> <img id="profilePicture" src="https://github.com/DavidVettuchirayil/Project-1-Milestone-1/blob/main/Milestone%202/assets/img/Screenshot%202023-01-26%20235624.png?raw=true"> </div>
-                    <table class="table table-primary table-bordered border-dark table-responsive" >
-                        <tr>
-                            <th> Name </th>
-                            <th> Major </th>
-                            <th> Academic Year </th>
-                        </tr>
-                        <tr>
-                            <td> David Vettuchirayil </td>
-                            <td> Computer Science </td>
-                            <td> Senior </td>
-                        </tr>
-                    </table>
-                </div>
-        
-                <div class="row">
-                <h3 id="What is my major?"> What is my major? </h3>
-                <div id="radioButton" class="form-check">
-                    <form>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="Major" id="Computer Science">
-                            <label class="form-check-label" for="Computer Science">
-                                Computer Science
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="Major" id="Business">
-                            <label class="form-check-label" for="Business">
-                                Business
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="Major" id="Engineering">
-                            <label class="form-check-label" for="Engineering">
-                                Engineering
-                            </label>
-                          </div>
-                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="Major" id="Sports Management">
-                            <label class="form-check-label" for="Sports Management">
-                                Sports Management
-                            </label>
-                          </div>
-                    </form>
-                </div>
-                </div>
-        
-        
-                <div class="row">
-                    <h2 id="Education"> Education </h2>
-                    <p>
-                        I have obtained a high school diploma from Salesian High School and am currently pursuing a bachelor's degree at St. John's University for Computer Science.
-                    </p>
-                </div>
-        
-                <div class="row">
-                    <h2 id="Work Experience"> Work Experience </h2>
-                    <ul class="list-unstyled">
-                        <li style="font-size: larger;"> Created various visual assets for a given data set using the Python Streamlit library at Headstarter's hackathon</li>
-                        <li style="font-size: larger;"> Created simulations and visual data charts in Java for my professor's Vehicular Cloud research group </li>
-                    </ul>
-                </div>
-        
-                <div class="row">
-                    <h2 id="Interests and Hobbies"> Interests and Hobbies</h2>
-                    <p>
-                        My interests include video games, mainly Nintendo products. I enjoy thrifting and getting lost in areas and seeing all the stores and interesting sights as I wander around. I'm also interested in video and image editing to make things I can share with my friends and help other people with what they need.
-                    </p>
-                </div>
-        
-               <div class="row">
-                    <h2 id="Programming Skills"> Programming Skills </h2>
-                    <p>
-                        Can comfortably create programs in Java to perform tasks. Everything else features very beginner level knowledge in syntax and utilization.
-                    </p>
-                    <ul class="list-unstyled">
-                        <li> <span style="color: blue;"> <mark>Java</mark> - Intermediate </span>  </li>
-                        <li> <span style="color: green;"> <mark>Python</mark> - Beginner </span> </li>
-                        <li> <span style="color: green;"> <mark>HTML</mark> - Beginner </span> </li>
-                        <li> <span style="color: green;"> <mark>CSS</mark> - Beginner </span> </li>
-                        <li> <span style="color: green;"> <mark>Bootstrap</mark> - Beginner </span> </li>
-                    </ul>
-               </div>
-        
-                <div class="row" style="padding-left: 15px;">
-                    <h2 id="Favorites"> Favorites </h2>
-                    <hr>
-                    <div class="col-auto g-0">
-                        <iframe src="https://player.vimeo.com/video/634442001?h=0a8ac30ba3" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe> 
-                    </div>
-                    <div class="col-auto g-0">
-                        <iframe src="https://www.youtube.com/embed/HQkSMJFJu4g" title="Rush Hour 3 (2/5) Movie CLIP - Yu & Mi (2007) HD" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
-                    </div>
-                    <div class="col-auto g-0">
-                        <iframe src="https://www.youtube.com/embed/plv506632yo" title="SpongeBob SquarePants: Classic Funny Moments Part 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
-                    </div>
-                    <div class="col-auto g-0">
-                        <iframe src="https://www.youtube.com/embed/cRbwQ7NbTF0" title="Iroh's Tale of Ba Sing Se ☕️ Full Scene | Avatar: The Last Airbender" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <hr>
-                </div>
-                
-                <div class="row">
-                    <h2 id="Favorite Website"> Favorite Website</h2>
-                    <a href="https://youtu.be/k1BneeJTDcU" target="_blank" style="font-size: large;"> Welcome to the Internet </a>
-                    <p class="text-justify favoriteWebsiteParagraph"> 
-                        Youtube is a video sharing platform where creators are able to upload, share, and engage with content uploaded to the website. In this particular video, creator, Bill Burnham, describes the absurity of the wide ranging faucets of the internet and the polarizing/captivating nature of the content produces on all aspects of the internet in the current state of the world being criminally online as we eventually designed the decisions that led to this.
-                    </p>
-                </div>
-        
-                <hr>
-                
-                <div class="row">
-                    <h2 id="Project Index"> Project Index</h2>
-                    <ul class="list-unstyled">
-                        <li> <a href="https://davidvettuchirayil.github.io/Project-1-Milestone-1/" target="_blank" style="font-size: large;"> Project-1-Milestone-1 </a> </li> 
-                        <p> Built a basic html webpage as a profile page to showcase my collective achievements, skills, interests and background.</p>
-                    </ul>
-                </div>
-        
-                <br> </br>
-                <div id="funnyMonkey" class="row"> 
-                   <div class="col">
-                    <img src="https://preview.redd.it/7vko45icaed91.png?width=1920&format=png&auto=webp&v=enabled&s=439e02ac2b333086f95103308074356d198342d4" class="img-thumbnail, rounded mx-auto d-block" width="15%">
-                    <p class="text-center"> 
-                        <span> Funni Monke </span>
-                    </p>
-                   </div>
-                </div>
-        
+            <div class="row h-25">
+                <div class="col" id="header-top">
+                    <h1>To-Do List</h1>
                 </div>
             </div>
+
+            <div class="row h-75 min-vh-100">
+                <div class="col" id="header-bottom">
+                    <div class="container">
+                        
+                        <form id="new-task" onsubmit="return false">
+                            <div class="form-group"> 
+                                <label for="title"> Add Task: </label>
+                                <input id="title" class="form-control" type="text" placeholder="New Task">
+                            </div>
+                            <div class="form-group">
+                                <label for="priority"> Task Priority: </label>
+                                <select id="priority" class="form-control"> 
+                                    <option value="High Priority"> High Priority </option>
+                                    <option value="Medium Priority"> Medium Priority </option>
+                                    <option value="Low Priority"> Low Priority </option>
+                                </select> 
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="status1"> Completed </label>
+                                <input class="form-check-input" type="radio" name="status" value="Completed"> 
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label" for="status2"> Pending </label>
+                                <input class="form-check-input" type="radio" name="status" value="Pending"> 
+                            </div>
+                            <button class="btn btn-primary" type="submit"> Submit </button>
+                        </form>
+
+                        <div class="container">
+                            <div>
+                                <ul id="myList" class="list-group">
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-
-
             </div>
         </div>
     </body>
-</html>
+</head>

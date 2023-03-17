@@ -1,0 +1,14 @@
+#header-top 
+{
+    background-color: #5797ff; 
+    height: 125px; 
+    width: 100%; 
+    align-items: center; 
+    justify-content: center; 
+    display: flex;
+}
+
+#header-bottom
+{
+    background-color: #a1b3cf;
+}
