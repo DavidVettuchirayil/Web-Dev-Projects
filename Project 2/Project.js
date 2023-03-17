@@ -40,8 +40,9 @@ function displayTasks() {
                     <label class="custom-control-label" for="taskStatus"></label>
                 </div>
             </div>
-            <div>   
-                <p> Status: ${status}
+            <div class="d-flex flex-column w-100">
+                <small> ${priority} </small>  
+                <small> Status: ${status} </small>
             </div>
             <a href="#" class="btn btn-danger" onclick="removeTask('${title}')"> Remove Task </a>
         </a>`;
