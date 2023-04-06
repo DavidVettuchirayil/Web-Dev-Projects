@@ -1,12 +1,10 @@
-[
-  {
-    "quiz1": [{
-        "questionNum": 1,
-        "questionDes": "This is a test",
-        "option1": "option 1",
-        "option2": "option 2",
-        "option3": "option 3",
-        "option4": "option 4" 
-    }]
-  }
-]
+{
+  "quiz1": [{
+      "questionNum": 1,
+      "questionDes": "This is a test",
+      "option1": "option 1",
+      "option2": "option 2",
+      "option3": "option 3",
+      "option4": "option 4" 
+  }]
+}
