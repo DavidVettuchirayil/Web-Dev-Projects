@@ -16,18 +16,27 @@ document.addEventListener("DOMContentLoaded", function() {
             appState.quizOption = document.querySelector("input[name='quizOption']:checked").value;
             
         }
+        getQuizData();
         return false;
     }
 })
 
-const renderView = function(view, something, data)
+const renderView = function(view, target, data)
 {
     var source = document.querySelector(view).innerHTML;
     var template = Handlebars.compile(source);
-    document.querySelector(something).innerHTML = template(data);
+    document.querySelector(target).innerHTML = template(data);
 }
 
 const updateView = function()
 {
     
+}
+
+const getQuizData = async function()
+{
+    const quizURL = "https://my-json-server.typicode.com/DavidVettuchirayil/Web-Dev-Projects/" + appState.quizOption;
+    const response = await fetch(quizURL);
+    const data = await response.json();
+    return data;
 }
