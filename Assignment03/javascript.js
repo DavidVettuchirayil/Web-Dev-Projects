@@ -38,5 +38,6 @@ const getQuizData = async function()
     const quizURL = "https://my-json-server.typicode.com/DavidVettuchirayil/Web-Dev-Projects/" + appState.quizOption;
     const response = await fetch(quizURL);
     const data = await response.json();
+    console.log(data);
     return data;
 }
