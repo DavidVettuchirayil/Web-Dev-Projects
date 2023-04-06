@@ -33,7 +33,7 @@ const updateView = function()
     
 }
 
-const getQuizData = async function()
+async function getQuizData()
 {
     const quizURL = "https://my-json-server.typicode.com/DavidVettuchirayil/Web-Dev-Projects/" + appState.quizOption;
     const response = await fetch(quizURL);
