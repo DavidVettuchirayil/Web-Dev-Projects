@@ -1,12 +1,13 @@
 var appState = {
+    activeView: "",
     username: "",
     quizOption: "",
-    activeView: ""
+    questionType: "",
+    quizData: {}
 }
 
 document.addEventListener("DOMContentLoaded", function() {
     renderView("#introView", "#activeView", appState);
-    appState.activeView = "#introView";
     document.getElementById("activeView").onsubmit = () => {
         if(appState.activeView == "#introView")
         {
@@ -14,30 +15,32 @@ document.addEventListener("DOMContentLoaded", function() {
                 appState.username = document.getElementById("username").value;
             }
             appState.quizOption = document.querySelector("input[name='quizOption']:checked").value;
-            
         }
-        getQuizData();
+        renderQuestion(0);
         return false;
     }
 })
 
 const renderView = function(view, target, data)
 {
+    appState.activeView = view;
     var source = document.querySelector(view).innerHTML;
     var template = Handlebars.compile(source);
     document.querySelector(target).innerHTML = template(data);
 }
 
-const updateView = function()
+async function getQuizData(questionNum)
 {
-    
-}
-
-async function getQuizData()
-{
-    const quizURL = "https://my-json-server.typicode.com/DavidVettuchirayil/Web-Dev-Projects/" + appState.quizOption;
+    const quizURL = "https://my-json-server.typicode.com/DavidVettuchirayil/Web-Dev-Projects/" + appState.quizOption + "/" + questionNum;
     const response = await fetch(quizURL);
     const data = await response.json();
     console.log(data);
     return data;
+}
+
+async function renderQuestion(questionNum)
+{
+    appState.quizData = await getQuizData(questionNum);
+    renderView("#quizView", "#activeView", appState);
+ 
 }
