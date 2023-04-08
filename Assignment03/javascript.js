@@ -42,5 +42,5 @@ async function renderQuestion(questionNum)
 {
     appState.quizData = await getQuizData(questionNum);
     renderView("#quizView", "#activeView", appState);
-    renderView(appState.quizData.questionType, "#questionView", appState.quizData);
+    renderView("#" + appState.quizData.questionType, "#questionView", appState.quizData);
 }
