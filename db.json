@@ -1,6 +1,7 @@
 {
   "quiz1": [{
       "id": 1,
+      "questionType": "multipleChoice",
       "questionNum": 1,
       "questionDes": "This is a test",
       "option1": "option 1",
