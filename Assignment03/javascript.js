@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
             appState.quizOption = document.querySelector("input[name='quizOption']:checked").value;
         }
-        renderQuestion(0);
+        renderQuestion(1);
         return false;
     }
 })
