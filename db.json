@@ -40,9 +40,16 @@
     },
     {
       "id": 5,
-      "questionType": "textResponse",
+      "questionType": "trueOrFalse",
       "questionNum": 5,
-      "questionDes": "This is a test 5",
+      "questionDes": "This is a test",
+      "answer": "false"
+    },
+    {
+      "id": 6,
+      "questionType": "textResponse",
+      "questionNum": 6,
+      "questionDes": "This is a test",
       "answer": "yes"
     }]
 }
