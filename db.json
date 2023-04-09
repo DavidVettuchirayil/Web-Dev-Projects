@@ -45,7 +45,7 @@
       "questionType": "textResponse",
       "questionNum": 5,
       "questionDes": "This is a test",
-      "answer": "yes"
+      "answer": "true"
     },
     {
       "id": 6,
