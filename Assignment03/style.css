@@ -1,7 +1,12 @@
 .question-button {
-    width: 300px;
+    width: 190px;
 }
 
 .bg-gray {
     background-color: #484e54;
 }
+
+.col img {
+    max-width: 30%;
+    max-height: 30%;
+  }
