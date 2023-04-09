@@ -55,28 +55,54 @@
 
     <script id="quizView" type="text/x-handlebars-template">
         <div class="container d-flex flex-column bg-dark">
-            <h2> Quiz </h2>
-            <div id="questionView">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2> Quiz {{quizTitle}}</h2>
+                    <div id="questionView">
                 
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
+                    <h4>User: {{username}}</h4>
+                    <br>
+                    <h5> Questions</h5>
+                    <p> {{questionNum}}/20</p>
+                </div>
             </div>
+        </div>
+        <div>
+
         </div>
     </script>
 
     <script id="multipleChoice" type="text/x-handlebars-template">
-        <div class="container bg-light">
+        <h4> Question {{questionNum}}</h4>
+        <div class="container bg-light mb-3 text-center">
             {{this.questionDes}}
         </div>
-        <div>
-            {{this.option1}}
-            {{this.option2}}
-            {{this.option3}}
-            {{this.option4}}
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+            <div class="row">
+                <button onclick="checkAnswer(value)" value="{{this.option1}}" class="btn btn-primary btn-lg mr-3 ml-3 mb-3 question-button" type="submit"> {{this.option1}} </button>
+                <button onclick="checkAnswer(value)" value="{{this.option2}}" class="btn btn-primary btn-lg mr-3 ml-3 mb-3 question-button" type="submit"> {{this.option2}} </button>
+            </div>
+            <div class="row">
+                <button onclick="checkAnswer(value)" value="{{this.option3}}" class="btn btn-primary btn-lg mr-3 ml-3 mb-3 question-button" type="submit"> {{this.option3}} </button>
+                <button onclick="checkAnswer(value)" value="{{this.option4}}" class="btn btn-primary btn-lg mr-3 ml-3 mb-3 question-button" type="submit"> {{this.option4}} </button>
+            </div>
         </div>
-
     </script>
 
     <script id="trueOrFalse" type="text/x-handlebars-template">
-        
+        <h4> Question {{questionNum}}</h4>
+        <div class="container bg-light mb-3 text-center">
+            True or False: {{this.questionDes}} {{}}
+        </div>
+        <div class="container d-flex flex-column justify-content-center align-items-center"> 
+            <div class="row">
+                <button onclick="checkAnswer(value)" value="true" class="btn btn-primary btn-lg mr-3 ml-3 mb-3 question-button" type="submit"> True </button>
+                <button onclick="checkAnswer(value)" value="false" class="btn btn-primary btn-lg mr-3 ml-3 mb-3 question-button" type="submit"> Flase </button>
+            </div>
+        </div>
     </script>
 
     <script id="imageSelect" type="text/x-handlebars-template">
@@ -87,7 +113,21 @@
 
     </script>
 
-    <script>
+    <script id="something">
 
+    </script>
+
+    <script id="correctAnswer" type="text/x-handlebars-template">
+        <div class="container d-flex flex-column justify-content-center align-items-center bg-success"> 
+            {{encouragingMessage}} 
+        </div>
+    </script>
+
+    <script id="incorrectAnswer" type="text/x-handlebars-template">
+        <div class="container d-flex flex-column justify-content-center align-items-center bg-warning">
+            <p>That answer was incorrect</p>
+            <p>The correct answer was "{{this.answer}}"</p>
+            <button onclick= "nextQuestion()" class="btn btn-lg btn-secondary">Got it</button>
+        </div>
     </script>
 </html>

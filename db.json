@@ -1,12 +1,33 @@
 {
-  "quiz1": [{
+  "quiz1": [
+    {
       "id": 1,
       "questionType": "multipleChoice",
       "questionNum": 1,
       "questionDes": "This is a test",
+      "answer": "option 1",
       "option1": "option 1",
       "option2": "option 2",
       "option3": "option 3",
       "option4": "option 4" 
-  }]
+    },
+    {
+      "id": 2,
+      "questionType": "multipleChoice",
+      "questionNum": 2,
+      "questionDes": "This is a test",
+      "answer": "option 2",
+      "option1": "option 1",
+      "option2": "option 2",
+      "option3": "option 3",
+      "option4": "option 4" 
+    },
+    {
+      "id": 3,
+      "questionType": "trueOrFalse",
+      "questionNum": 3,
+      "questionDes": "This is a test",
+      "answer": "true"
+    }]
+
 }
