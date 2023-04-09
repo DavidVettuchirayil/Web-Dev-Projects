@@ -65,8 +65,14 @@
                 <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
                     <h4>User: {{username}}</h4>
                     <br>
+                    <h5> Timer</h5>
+                    <p> {{questionNum}}/20</p>
+                    <br>
                     <h5> Questions</h5>
                     <p> {{questionNum}}/20</p>
+                    <br>
+                    <h5> Score</h5>
+                    <p> {{quizScore}}/20</p>
                 </div>
             </div>
         </div>
@@ -95,7 +101,7 @@
     <script id="trueOrFalse" type="text/x-handlebars-template">
         <h4> Question {{questionNum}}</h4>
         <div class="container bg-light mb-3 text-center">
-            True or False: {{this.questionDes}} {{}}
+            True or False: {{this.questionDes}}
         </div>
         <div class="container d-flex flex-column justify-content-center align-items-center"> 
             <div class="row">
@@ -106,7 +112,20 @@
     </script>
 
     <script id="imageSelect" type="text/x-handlebars-template">
-
+        <h4> Question {{questionNum}}</h4>
+        <div class="container bg-light mb-3 text-center">
+            {{this.questionDes}}
+        </div>
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+            <div class="row">
+                <button onclick="checkAnswer(value)" value="{{this.option1}}" class="btn btn-primary btn-lg mr-3 ml-3 mb-3 question-button"><a href="{{this.option2}}"></a></button>
+                <button onclick="checkAnswer(value)" value="{{this.option2}}" class="btn btn-primary btn-lg mr-3 ml-3 mb-3 question-button"><a href="{{this.option2}}"></a></button>
+            </div>
+            <div class="row">
+                <button onclick="checkAnswer(value)" value="{{this.option3}}" class="btn btn-primary btn-lg mr-3 ml-3 mb-3 question-button"><a href="{{this.option3}}"></a></button>
+                <button onclick="checkAnswer(value)" value="{{this.option4}}" class="btn btn-primary btn-lg mr-3 ml-3 mb-3 question-button"><a href="{{this.option4}}"></a></button>
+            </div>
+        </div>
     </script>
 
     <script id="textResponse" type="text/x-handlebars-template">
@@ -118,16 +137,24 @@
     </script>
 
     <script id="correctAnswer" type="text/x-handlebars-template">
-        <div class="container d-flex flex-column justify-content-center align-items-center bg-success"> 
-            {{encouragingMessage}} 
+        <div class="container"> 
+            <div class="row">
+                <div class="col text-center my-5 bg-success border-dark" >
+                    <h2>{{encouragingMessage}}</h2>
+                </div>
+            </div> 
         </div>
     </script>
 
     <script id="incorrectAnswer" type="text/x-handlebars-template">
-        <div class="container d-flex flex-column justify-content-center align-items-center bg-warning">
-            <p>That answer was incorrect</p>
-            <p>The correct answer was "{{this.answer}}"</p>
-            <button onclick= "nextQuestion()" class="btn btn-lg btn-secondary">Got it</button>
+        <div class="container"> 
+            <div class="row">
+                <div class="col text-center my-5 bg-danger border-dark" >
+                    <h3>That answer was incorrect</h3>
+                    <p class="font-weight-bold">The correct answer was "{{this.answer}}"</p>
+                    <button onclick= "nextQuestion()" class="btn btn-lg btn-secondary">Got it</button>
+                </div>
+            </div> 
         </div>
     </script>
 </html>
