@@ -67,10 +67,10 @@
                     <p> {{username}}</p>
                     <br>
                     <h5> Timer</h5>
-                    <p> {{questionNum}}/20</p>
+                    <p> {{currentQuestion}}/20</p>
                     <br>
                     <h5> Questions</h5>
-                    <p> {{questionNum}}/20</p>
+                    <p> {{currentQuestion}}/20</p>
                     <br>
                     <h5> Score</h5>
                     <p> {{quizScore}}/20</p>
@@ -83,7 +83,7 @@
     </script>
 
     <script id="multipleChoice" type="text/x-handlebars-template">
-        <h4> Question {{questionNum}}</h4>
+        <h4> Question {{currentQuestion}}</h4>
         <div class="container bg-light mb-5 mt-4 text-center">
             {{this.questionDes}}
         </div>
@@ -100,7 +100,7 @@
     </script>
 
     <script id="trueOrFalse" type="text/x-handlebars-template">
-        <h4> Question {{questionNum}}</h4>
+        <h4> Question {{currentQuestion}}</h4>
         <div class="container bg-light mb-5 mt-4 text-center">
             True or False: {{this.questionDes}}
         </div>
@@ -113,7 +113,7 @@
     </script>
 
     <script id="imageSelect" type="text/x-handlebars-template">
-        <h4> Question {{questionNum}}</h4>
+        <h4> Question {{currentQuestion}}</h4>
         <div>
             <div class="container bg-light mb-5 mt-4 text-center" >
                 {{this.questionDes}}
@@ -130,15 +130,15 @@
     </script>
 
     <script id="textResponse" type="text/x-handlebars-template">
-        <h4> Question {{questionNum}}</h4>
+        <h4> Question {{currentQuestion}}</h4>
         <div class="container bg-light mb-5 mt-4 text-center">
             {{this.questionDes}}
         </div>
         <div class="container d-flex flex-column justify-content-center align-items-center"> 
             <div>
-                <form onsubmit="checkAnswer(textInput.value)">
+                <form class="form-group form-control">
                     <input type="text" class="form-control" name="textInput">
-                    <button class="form-control btn btn-secondary">Submit</button>
+                    <button onsubmit="checkAnswer(textInput.value)" class="form-control btn btn-secondary">Submit</button>
                 </form>
             </div>
         </div>

@@ -4,7 +4,8 @@ var appState = {
     quizOption: "",
     quizTitle: "",
     questionType: "",
-    questionNum: "",
+    currentQuestion: "",
+    questionComplete: "",
     quizData: {},
     quizScore: 0,
     encouragingMessage: ""
@@ -12,7 +13,7 @@ var appState = {
 
 document.addEventListener("DOMContentLoaded", function() {
     renderView("#introView", "#activeView", appState);
-    document.querySelector("activeView").onsubmit = () => {
+    document.getElementById("activeView").onsubmit = () => {
         if(appState.activeView == "#introView")
         {
             if(document.querySelector("#username").value != ""){
@@ -52,7 +53,7 @@ async function getQuizData(questionNum)
 
 async function renderQuestion(questionNum)
 {
-    appState.questionNum = questionNum;
+    appState.currentQuestion++;
     appState.quizData = await getQuizData(questionNum);
     renderView("#quizView", "#activeView", appState);
     renderView("#" + appState.quizData.questionType, "#questionView", appState.quizData);
@@ -87,6 +88,6 @@ const incorrectAnswer = function()
 
 const nextQuestion = function()
 {
-    appState.questionNum++;
-    renderQuestion(appState.questionNum);
+    appState.questionComplete++;
+    renderQuestion(appState.currentQuestion++);
 }
