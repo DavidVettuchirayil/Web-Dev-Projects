@@ -136,10 +136,10 @@
             {{this.questionDes}}
         </div>
         <div class="container d-flex flex-column justify-content-center align-items-center"> 
-            <div>
+            <form onsubmit="checkAnswer(textInput.value)">
                 <input type="text" class="form-control" name="textInput">
                 <button onsubmit= "checkAnswer(textInput.value)" class="form-control btn btn-lg btn-secondary">Submit</button>
-            </div>
+            </form>
         </div>
     </script>
 
