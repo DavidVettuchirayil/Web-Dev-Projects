@@ -101,7 +101,7 @@
 
     <script id="trueOrFalse" type="text/x-handlebars-template">
         <h4> Question {{questionNum}}</h4>
-        <div class="container bg-light mb-3 text-center">
+        <div class="container bg-light mb-5 mt-4 text-center">
             True or False: {{this.questionDes}}
         </div>
         <div class="container d-flex flex-column justify-content-center align-items-center"> 
@@ -115,7 +115,7 @@
     <script id="imageSelect" type="text/x-handlebars-template">
         <h4> Question {{questionNum}}</h4>
         <div>
-            <div class="container bg-light mb-3 text-center" >
+            <div class="container bg-light mb-5 mt-4 text-center" >
                 {{this.questionDes}}
             </div>
             <div class="container">
@@ -123,12 +123,6 @@
                     <div class="col">
                         <button onclick="checkAnswer(value)" value="{{this.option1}}" class="btn question-button"><img src="{{this.option1}}" class="img-fluid mx-auto"></button>
                         <button onclick="checkAnswer(value)" value="{{this.option2}}" class="btn question-button"><img src="{{this.option2}}" class="img-fluid mx-auto"></button>
-                    </div>
-                </div>
-                <div class="row text-center justify-content-center align-items-center flex-shrink-0">
-                    <div class="col">
-                        <button onclick="checkAnswer(value)" value="{{this.option3}}" class="btn question-button"><img src="{{this.option3}}" class="img-fluid mx-auto"></button>
-                        <button onclick="checkAnswer(value)" value="{{this.option4}}" class="btn question-button"><img src="{{this.option4}}" class="img-fluid mx-auto"></button>
                     </div>
                 </div>
             </div>
@@ -144,7 +138,7 @@
         <div class="container d-flex flex-column justify-content-center align-items-center"> 
             <div>
                 <input type="text" class="form-control" name="textInput">
-                <button onclick= "checkAnswer(textInput.value)" class="form-control btn btn-lg btn-secondary">Submit</button>
+                <button onsubmit= "checkAnswer(textInput.value)" class="form-control btn btn-lg btn-secondary">Submit</button>
             </div>
         </div>
     </script>

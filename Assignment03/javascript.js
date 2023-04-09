@@ -27,8 +27,8 @@ document.addEventListener("DOMContentLoaded", function() {
             {
                 appState.quizTitle = "Placeholder2"
             }
+            renderQuestion(1);
         }
-        renderQuestion(1);
         return false;
     }
 })
