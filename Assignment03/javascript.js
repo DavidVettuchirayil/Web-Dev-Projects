@@ -12,7 +12,7 @@ var appState = {
 
 document.addEventListener("DOMContentLoaded", function() {
     renderView("#introView", "#activeView", appState);
-    document.getElementById("activeView").onsubmit = () => {
+    document.querySelector("activeView").onsubmit = () => {
         if(appState.activeView == "#introView")
         {
             if(document.querySelector("#username").value != ""){
