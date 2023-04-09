@@ -44,17 +44,6 @@
       "questionNum": 5,
       "questionDes": "This is a test",
       "answer": "true"
-    },
-    {
-      "id": 6,
-      "questionType": "multipleChoice",
-      "questionNum": 6,
-      "questionDes": "This is a test",
-      "answer": "option 3",
-      "option1": "option 1",
-      "option2": "option 2",
-      "option3": "option 3",
-      "option4": "option 4" 
     }]
 
 }
