@@ -36,13 +36,13 @@
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="quizOption" id="quizOption1" value="quiz1" checked>
                             <label class="form-check-label" for="quizOption">
-                              Quiz 1
+                              Java Quiz
                             </label>
                         </div>
                         <div class="form-check">
                             <input class="form-check-input" type="radio" name="quizOption" id="quizOption2" value="quiz2">
                             <label class="form-check-label" for="quizOption">
-                              Quiz 2
+                              HTML Quiz
                             </label>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
         <div class="container d-flex flex-column bg-dark">
             <div class="row">
                 <div class="col-md-8">
-                    <h2> Quiz {{quizTitle}}</h2>
+                    <h2> {{quizTitle}}</h2>
                     <div id="questionView">
                 
                     </div>
@@ -147,8 +147,17 @@
         </div>
     </script>
 
-    <script id="something">
-
+    <script id="twoChoices" type="text/x-handlebars-template">
+        <h4> Question {{questionNum}}</h4>
+        <div class="container bg-light mb-5 mt-4 text-center">
+            {{this.questionDes}}
+        </div>
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+            <div class="row justify-content-between">
+                <button onclick="checkAnswer(value)" value="{{this.option1}}" class="btn btn-primary btn-lg mr-3 ml-3 mb-3 question-button" type="submit"> {{this.option1}} </button>
+                <button onclick="checkAnswer(value)" value="{{this.option2}}" class="btn btn-primary btn-lg mr-3 ml-3 mb-3 question-button" type="submit"> {{this.option2}} </button>
+            </div>
+        </div>
     </script>
 
     <script id="correctAnswer" type="text/x-handlebars-template">

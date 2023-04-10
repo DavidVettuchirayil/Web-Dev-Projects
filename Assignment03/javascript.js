@@ -28,11 +28,11 @@ document.addEventListener("DOMContentLoaded", function() {
             appState.quizOption = document.querySelector("input[name='quizOption']:checked").value;
             if(appState.quizOption == "quiz1")
             {
-                appState.quizTitle = "Placeholder1"
+                appState.quizTitle = "Java Quiz"
             }
             else
             {
-                appState.quizTitle = "Placeholder2"
+                appState.quizTitle = "HTML Quiz"
             }
             renderQuestion(1);
         }
@@ -153,7 +153,7 @@ const startTimer = function()
 
 const getTime = function()
 {
-    if(appState.activeView == "#multipleChoice" || appState.activeView == "#trueOrFalse" || appState.activeView == "#imageSelect" || appState.activeView == "#textResponse" || appState.activeView == "#correctAnswer" || appState.activeView == "#incorrectAnswer")
+    if(appState.activeView == "#multipleChoice" || appState.activeView == "#trueOrFalse" || appState.activeView == "#imageSelect" || appState.activeView == "#textResponse" || appState.activeView == "twoChoices" || appState.activeView == "#correctAnswer" || appState.activeView == "#incorrectAnswer")
     {
         timer.elapsedTime = new Date().getTime() - timer.timeStart;
         timer.convertedTime = convertMiliseconds(timer.elapsedTime);

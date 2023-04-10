@@ -2,31 +2,29 @@
   "quiz1": [
     {
       "id": 1,
-      "questionType": "multipleChoice",
+      "questionType": "twoChoices",
       "questionNum": 1,
-      "questionDes": "This is a test",
-      "answer": "option 1",
-      "option1": "option 1",
-      "option2": "option 2",
-      "option3": "option 3",
-      "option4": "option 4" 
+      "questionDes": "What company was the Java programming language developed by?",
+      "answer": "Sun Microsystems",
+      "option1": "Sun Microsystems",
+      "option2": "Moon Macrosystems"
     },
     {
       "id": 2,
       "questionType": "multipleChoice",
       "questionNum": 2,
-      "questionDes": "This is a test",
-      "answer": "option 2",
-      "option1": "option 1",
-      "option2": "option 2",
-      "option3": "option 3",
-      "option4": "option 4" 
+      "questionDes": "Which of the following is not a primitive data type in Java?",
+      "answer": "String",
+      "option1": "int",
+      "option2": "double",
+      "option3": "String",
+      "option4": "boolean" 
     },
     {
       "id": 3,
       "questionType": "trueOrFalse",
       "questionNum": 3,
-      "questionDes": "This is a test",
+      "questionDes": "Java is a High Level language",
       "answer": "true"
     },
     {
@@ -34,44 +32,48 @@
       "questionType": "imageSelect",
       "questionNum": 4,
       "questionDes": "This is a test 4",
-      "answer": "https://media.npr.org/assets/img/2017/09/12/macaca_nigra_self-portrait-3e0070aa19a7fe36e802253048411a38f14a79f8-s1100-c50.jpg",
-      "option1": "https://media.npr.org/assets/img/2017/09/12/macaca_nigra_self-portrait-3e0070aa19a7fe36e802253048411a38f14a79f8-s1100-c50.jpg",
-      "option2": "https://media.npr.org/assets/img/2017/09/12/macaca_nigra_self-portrait-3e0070aa19a7fe36e802253048411a38f14a79f8-s1100-c50.jpg"
+      "answer": "Assignment03\img\Question 4a.png",
+      "option1": "Assignment03\img\Question 4a.png",
+      "option2": "Assignment03\img\Question 4b.png"
     },
     {
       "id": 5,
-      "questionType": "trueOrFalse",
+      "questionType": "multipleChoice",
       "questionNum": 5,
-      "questionDes": "This is a test",
-      "answer": "false"
+      "questionDes": "Which keyword is used to define a constant variable in Java?",
+      "answer": "const",
+      "option1": "final",
+      "option2": "static",
+      "option3": "var",
+      "option4": "const" 
     },
     {
       "id": 6,
       "questionType": "textResponse",
       "questionNum": 6,
-      "questionDes": "This is a test",
-      "answer": "yes"
+      "questionDes": "What does JVM stands for? (Capitalize the first letter of each word)",
+      "answer": "Java Virtual Machine"
     },
     {
       "id": 7,
       "questionType": "trueOrFalse",
       "questionNum": 7,
-      "questionDes": "This is a test 7",
-      "answer": "true"
+      "questionDes": "Is #test1 a legal Java variable name?",
+      "answer": "false"
     },
     {
       "id": 8,
-      "questionType": "trueOrFalse",
+      "questionType": "textResponse",
       "questionNum": 8,
-      "questionDes": "This is a test 8",
-      "answer": "true"
+      "questionDes": "What is the result of the following calculation: 12 % 5",
+      "answer": "2"
     },
     {
       "id": 9,
-      "questionType": "trueOrFalse",
+      "questionType": "textResponse",
       "questionNum": 9,
-      "questionDes": "This is a test 9",
-      "answer": "true"
+      "questionDes": "What is the default value of an uninitialized integer variable in Java?",
+      "answer": "0"
     },
     {
       "id": 10,
