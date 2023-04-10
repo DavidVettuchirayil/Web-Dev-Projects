@@ -10,6 +10,13 @@ var appState = {
     encouragingMessage: ""
 }
 
+var timer = {
+    timeStart: 0,
+    elapsedTime: 0,
+    convertedTime: "",
+    timerOn: false
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     renderView("#introView", "#activeView", appState);
     document.getElementById("activeView").onsubmit = () => {
@@ -29,13 +36,21 @@ document.addEventListener("DOMContentLoaded", function() {
             }
             renderQuestion(1);
         }
+        if(timer.timerOn == false)
+        {
+            timer.timerOn = true;
+            startTimer();
+        }
         return false;
     }
 })
 
 const renderView = function(view, target, data)
 {
-    appState.activeView = view;
+    if(view != "#timer")
+    {
+        appState.activeView = view;
+    }
     var source = document.querySelector(view).innerHTML;
     var template = Handlebars.compile(source);
     document.querySelector(target).innerHTML = template(data);
@@ -125,4 +140,35 @@ const restartQuiz = function()
     appState.quizScore = 0;
     appState.encouragingMessage = "";
     renderView("#introView", "#activeView", appState);
+}
+
+const startTimer = function()
+{
+    if(timer.timerOn == true)
+    {
+        timer.timeStart = new Date().getTime();
+        setInterval(getTime, 1000);
+    }
+}
+
+const getTime = function()
+{
+    if(appState.activeView == "#multipleChoice" || appState.activeView == "#trueOrFalse" || appState.activeView == "#imageSelect" || appState.activeView == "#textResponse" || appState.activeView == "#correctAnswer" || appState.activeView == "#incorrectAnswer")
+    {
+        timer.elapsedTime = new Date().getTime() - timer.timeStart;
+        timer.convertedTime = convertMiliseconds(timer.elapsedTime);
+        renderView("#timer", "#timeDisplay", timer);
+    } 
+    if(appState.activeView == "#passedQuiz" || appState.activeView == "#failedQuiz")
+    {
+        timer.timerOn = false;
+        renderView("#timer", "#timeDisplay", timer);
+    }
+}
+
+const convertMiliseconds = function(milliseconds)
+{
+    var minutes = Math.floor(milliseconds / 60000);
+    var seconds = ((milliseconds % 60000) / 1000).toFixed(0);
+    return minutes + ":" + (seconds < 10 ? '0' : '') + seconds;
 }

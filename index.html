@@ -67,7 +67,7 @@
                     <p> {{username}}</p>
                     <br>
                     <h5> Timer</h5>
-                    <p> {{questionNum}}/20</p>
+                    <div id="timeDisplay"> </div>
                     <br>
                     <h5> Questions</h5>
                     <p> {{questionNum}}/20</p>
@@ -80,6 +80,10 @@
         <div>
 
         </div>
+    </script>
+
+    <script id="timer" type="text/x-handlebars-template">
+        {{convertedTime}}
     </script>
 
     <script id="multipleChoice" type="text/x-handlebars-template">
