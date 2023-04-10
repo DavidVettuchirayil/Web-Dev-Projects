@@ -88,7 +88,7 @@ const incorrectAnswer = function()
 const nextQuestion = function()
 {
     appState.questionNum++;
-    if(appState.questionNum == 20)
+    if(appState.questionNum == 21)
     {
         endQuiz();
     }
