@@ -88,5 +88,37 @@ const incorrectAnswer = function()
 const nextQuestion = function()
 {
     appState.questionNum++;
-    renderQuestion(appState.questionNum);
+    if(appState.questionNum == 20)
+    {
+        endQuiz();
+    }
+    else
+    {
+        renderQuestion(appState.questionNum);
+    }
+}
+
+const endQuiz = function()
+{
+    if((appState.quizScore / 20) > 0.8)
+    {
+        renderView("#passedQuiz", "#questionView", appState);
+    }
+    else
+    {
+        renderView("#failedQuiz", "#questionView", appState);
+    }
+}
+
+const restartQuiz = function()
+{
+    appState.username = "";
+    appState.quizOption = "";
+    appState.quizTitle = "";
+    appState.questionType = "";
+    appState.questionNum = "";
+    appState.quizData = {};
+    appState.quizScore = 0;
+    appState.encouragingMessage = "";
+    renderView("#introView", "#activeView", appState);
 }

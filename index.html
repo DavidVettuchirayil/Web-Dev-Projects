@@ -136,7 +136,7 @@
             {{this.questionDes}}
         </div>
         <div class="container d-flex flex-column justify-content-center align-items-center"> 
-            <form onsubmit="checkAnswer(textInput.value)">
+            <form class="form-group" onsubmit="checkAnswer(textInput.value)">
                 <input type="text" class="form-control" name="textInput">
                 <button onsubmit= "checkAnswer(textInput.value)" class="form-control btn btn-lg btn-secondary">Submit</button>
             </form>
@@ -166,6 +166,28 @@
                     <button onclick= "nextQuestion()" class="btn btn-lg btn-secondary">Got it</button>
                 </div>
             </div> 
+        </div>
+    </script>
+
+    <script id="passedQuiz" type="text/x-handlebars-template">
+        <div class="container"> 
+            <div class="row">
+                <div class="col text-center my-5 bg-success border-dark" >
+                    <h3>Congratulations {{username}}! You passed the quiz!</h3>
+                    <button onclick="restartQuiz()" class="btn btn-lg btn-primary"> Restart </button>
+                </div>
+            </div>
+        </div>
+    </script>
+
+    <script id="failedQuiz" type="text/x-handlebars-template">
+        <div class="container"> 
+            <div class="row">
+                <div class="col text-center my-5 bg-danger border-dark" >
+                    <h3>Sorry {{username}}, you failed the quiz.</h3>
+                    <button onclick="restartQuiz()" class="btn btn-lg btn-primary"> Restart </button>
+                </div>
+            </div>
         </div>
     </script>
 </html>
