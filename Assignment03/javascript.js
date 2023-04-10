@@ -102,10 +102,14 @@ const endQuiz = function()
 {
     if((appState.quizScore / 20) > 0.8)
     {
+        appState.questionNum--;
+        renderView("#quizView", "#activeView", appState);
         renderView("#passedQuiz", "#questionView", appState);
     }
     else
     {
+        appState.questionNum--;
+        renderView("#quizView", "#activeView", appState);
         renderView("#failedQuiz", "#questionView", appState);
     }
 }
