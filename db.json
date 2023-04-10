@@ -32,9 +32,9 @@
       "questionType": "imageSelect",
       "questionNum": 4,
       "questionDes": "This is a test 4",
-      "answer": "Assignment03\img\Question 4a.png",
-      "option1": "Assignment03\img\Question 4a.png",
-      "option2": "Assignment03\img\Question 4b.png"
+      "answer": "Assignment03/img/Question 4a.png",
+      "option1": "Assignment03/img/Question 4a.png",
+      "option2": "Assignment03/img/Question 4b.png"
     },
     {
       "id": 5,
