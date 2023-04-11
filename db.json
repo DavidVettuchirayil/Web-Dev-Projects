@@ -194,5 +194,12 @@
       "answer": "<script>",
       "option1": "<link>",
       "option2": "<script>"
+    },
+    {
+      "id": 3,
+      "questionType": "trueOrFalse",
+      "questionNum": 3,
+      "questionDes": "The <br> tag makes text bold",
+      "answer": "false"
     }]
 }
