@@ -327,5 +327,12 @@
       "questionNum": 17,
       "questionDes": "What is the HTML tag for the paragraph element?",
       "answer": "<p>"
+    },
+    {
+      "id": 18,
+      "questionType": "textResponse",
+      "questionNum": 18,
+      "questionDes": "What is the HTML attribute used to reference the location of an image inside the <img> tag?",
+      "answer": "src"
     }]
 }
