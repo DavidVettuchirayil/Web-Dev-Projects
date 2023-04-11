@@ -6,6 +6,10 @@
     background-color: #484e54;
 }
 
+.col {
+    overflow: hidden;
+}
+
 .col img {
     width: auto;
     height: auto;
