@@ -185,5 +185,14 @@
       "option2": "Hiddentext Makeup Language",
       "option3": "Hypertext Markup Language",
       "option4": "Hypertool Madeup Language"
+    },
+    {
+      "id": 2,
+      "questionType": "twoChoices",
+      "questionNum": 2,
+      "questionDes": "What HTML tag can you use to link to an external javascript file?",
+      "answer": "<script>",
+      "option1": "<link>",
+      "option2": "<script>"
     }]
 }
