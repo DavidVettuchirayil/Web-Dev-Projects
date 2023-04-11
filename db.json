@@ -334,16 +334,5 @@
       "questionNum": 18,
       "questionDes": "What is the HTML attribute used to reference the location of an image inside the <img> tag?",
       "answer": "src"
-    },
-    {
-      "id": 19,
-      "questionType": "multipleChoice",
-      "questionNum": 19,
-      "questionDes": "Who is attributed as the creator of HTML?",
-      "answer": "Tim Berners-Lee",
-      "option1": "Tim Berners-Lee",
-      "option2": "Rasmus Lerdorf",
-      "option3": "Brendan Eich",
-      "option4": "Sergey Brin"
     }]
 }
