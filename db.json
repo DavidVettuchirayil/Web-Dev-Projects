@@ -31,7 +31,7 @@
       "id": 4,
       "questionType": "imageSelect",
       "questionNum": 4,
-      "questionDes": "This is a test 4",
+      "questionDes": "Which is the correct implementation to produce the output:\nTesting 1\n Testing 2\n Testing 3",
       "answer": "Assignment03/img/Question 4a.png",
       "option1": "Assignment03/img/Question 4a.png",
       "option2": "Assignment03/img/Question 4b.png"
@@ -79,77 +79,99 @@
       "id": 10,
       "questionType": "trueOrFalse",
       "questionNum": 10,
-      "questionDes": "This is a test 10",
-      "answer": "true"
+      "questionDes": "In Java, the == operator is used to compare the values of two objects.",
+      "answer": "false"
     },
     {
       "id": 11,
-      "questionType": "trueOrFalse",
+      "questionType": "multipleChoice",
       "questionNum": 11,
-      "questionDes": "This is a test 11",
-      "answer": "true"
+      "questionDes": "Which person is attributed as the creator of Java?",
+      "answer": "James Gosling",
+      "option1": "James Gosling",
+      "option2": "Guido van Rossum",
+      "option3": "Bjarne Stroustrup",
+      "option4": "David Vettuchirayil" 
     },
     {
       "id": 12,
       "questionType": "trueOrFalse",
       "questionNum": 12,
-      "questionDes": "This is a test 12",
-      "answer": "true"
+      "questionDes": "Java supports multiple inheritance.",
+      "answer": "false"
     },
     {
       "id": 13,
-      "questionType": "trueOrFalse",
+      "questionType": "multipleChoice",
       "questionNum": 13,
-      "questionDes": "This is a test 13",
-      "answer": "true"
+      "questionDes": "Which of the following is not an object-oriented programming concept?",
+      "answer": "Desecration",
+      "option1": "Inheritance",
+      "option2": "Polymorphism",
+      "option3": "Abstraction",
+      "option4": "Desecration" 
     },
     {
       "id": 14,
-      "questionType": "trueOrFalse",
+      "questionType": "twoChoices",
       "questionNum": 14,
-      "questionDes": "This is a test 14",
-      "answer": "true"
+      "questionDes": "Which of the following is illegal in Java?",
+      "answer": "float f = 45.0;",
+      "option1": "float f = 45.0;",
+      "option2": "double f = 45.0;"
     },
     {
       "id": 15,
       "questionType": "trueOrFalse",
       "questionNum": 15,
-      "questionDes": "This is a test 15",
+      "questionDes": "Java uses automatic garbage collection to manage memory.",
       "answer": "true"
     },
     {
       "id": 16,
-      "questionType": "trueOrFalse",
+      "questionType": "multipleChoice",
       "questionNum": 16,
-      "questionDes": "This is a test 16",
-      "answer": "true"
+      "questionDes": "Which of the following is correct?",
+      "answer": "String temp[] = {'a', 'b', 'c'}",
+      "option1": "String temp[] = new String{'a' 'b' 'c'};",
+      "option2": "String temp[] = {'a' 'b' ''c};",
+      "option3": "String temp = {'a', 'b', 'c'}",
+      "option4": "String temp[] = {'a', 'b', 'c'}" 
     },
     {
       "id": 17,
-      "questionType": "trueOrFalse",
+      "questionType": "textResponse",
       "questionNum": 17,
-      "questionDes": "This is a test 17",
-      "answer": "true"
+      "questionDes": "What is the output to the following lines of code: \nString str1 = 'Hello';\nString str2 = new String('Hello');\nSystem.out.println(str1 == str2);",
+      "answer": "false"
     },
     {
       "id": 18,
       "questionType": "trueOrFalse",
       "questionNum": 18,
-      "questionDes": "This is a test 18",
+      "questionDes": "Java is an object-oriented language.",
       "answer": "true"
     },
     {
       "id": 19,
-      "questionType": "trueOrFalse",
+      "questionType": "multipleChoice",
       "questionNum": 19,
-      "questionDes": "This is a test 19",
-      "answer": "true"
+      "questionDes": "Which is not an access modifier in Java?",
+      "answer": "regulated",
+      "option1": "public",
+      "option2": "regulated",
+      "option3": "private",
+      "option4": "protected" 
     },
     {
       "id": 20,
-      "questionType": "trueOrFalse",
+      "questionType": "multipleChoice",
       "questionNum": 20,
-      "questionDes": "This is a test 20",
-      "answer": "true"
+      "questionDes": "Which keyword is used to create an instance of a class in Java?",
+      "answer": "new",
+      "option1": "create",
+      "option2": "new",
+      "option3": "instance",
+      "option4": "object" 
     }]
 }
