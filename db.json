@@ -173,17 +173,5 @@
       "option2": "new",
       "option3": "instance",
       "option4": "object" 
-    }],
-  "quiz2": [
-    {
-      "id": 1,
-      "questionType": "multipleChoice",
-      "questionNum": 1,
-      "questionDes": "What does HTML stand for?",
-      "answer": "Hypertext Markup Language",
-      "option1": "Hypertext Mutable Language",
-      "option2": "Hiddentext Makeup Language",
-      "option3": "Hypertext Markup Language",
-      "option4": "Hypertool Madeup Language"
     }]
 }
