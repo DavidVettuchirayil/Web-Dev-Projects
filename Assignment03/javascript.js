@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 appState.username = document.getElementById("username").value;
             }
             appState.quizOption = document.querySelector("input[name='quizOption']:checked").value;
-            if(appState.quizOption == "quiz1")
+            if(appState.quizOption == "java")
             {
                 appState.quizTitle = "Java Quiz"
             }

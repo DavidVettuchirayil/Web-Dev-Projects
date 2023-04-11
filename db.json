@@ -1,5 +1,5 @@
 {
-  "quiz1": [
+  "java": [
     {
       "id": 1,
       "questionType": "twoChoices",
@@ -355,7 +355,7 @@
       "option1": "Opening",
       "option2": "Closing"
     }],
-    "quiz2": [
+    "html": [
       {
         "id": 1,
         "questionType": "multipleChoice",
